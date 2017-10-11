@@ -16,7 +16,7 @@ Creating an element in JavaScript couldn't be easier. Simply call `document.crea
 Open this lesson's `index.html` file in your browser and open up the browser's console. In the console, enter
 
 ``` javascript
-var element = document.createElement('div')
+let element = document.createElement('div')
 ```
 
 Type `element.` (or whatever you named your newly minted element), and explore the properties available. It's a living, breathing DOM element, but it doesn't yet appear in the DOM.
@@ -54,7 +54,7 @@ We can append elements to that element:
 
 
 ``` javascript
-var ul = document.createElement('ul')
+let ul = document.createElement('ul')
 
 for (let i = 0; i < 3; i++) {
   let li = document.createElement('li')
@@ -101,3 +101,5 @@ And it's gone!
 - [appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/creating-and-inserting-dom-nodes'>Creating And Inserting Nodes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-dom-and-events-removing-altering-and-inserting-html-readme'>Creating and Inserting DOM Nodes</a> on Learn.co and start learning to code for free.</p>
