@@ -18,8 +18,8 @@ Open this lesson's `index.html` file in your browser or use `httpserver` to
 serve it temporarily. Once open,
 [open up the browser's console][openconsole]. In the console, enter:
 
-```javascript
-var element = document.createElement('div');
+``` javascript
+let element = document.createElement('div');
 ```
 
 Type `element.` (or whatever you named your newly minted element), and explore
@@ -63,8 +63,8 @@ And now our element's text is centered.
 
 We can append elements to that element:
 
-```javascript
-var ul = document.createElement('ul');
+``` javascript
+let ul = document.createElement('ul');
 
 for (let i = 0; i < 3; i++) {
   let li = document.createElement('li');
@@ -113,3 +113,5 @@ And it's gone!
 [openconsole]: https://developers.google.com/web/tools/chrome-devtools/console/
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/creating-and-inserting-dom-nodes'>Creating And Inserting Nodes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-dom-and-events-removing-altering-and-inserting-html-readme'>Creating and Inserting DOM Nodes</a> on Learn.co and start learning to code for free.</p>
