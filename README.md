@@ -24,7 +24,7 @@ Open this lesson's `index.html` file in your browser and open up the browser's
 console. In the console, enter
 
 ``` javascript
-var element = document.createElement('div')
+let element = document.createElement('div');
 ```
 
 Type `element.` (or whatever you named your new element). It's an existing DOM element, but it doesn't yet appear in the DOM.
@@ -32,7 +32,7 @@ Type `element.` (or whatever you named your new element). It's an existing DOM e
 We can set properties on it:
 
 ``` javascript
-element.innerHTML = 'Hello, DOM!'
+element.innerHTML = 'Hello, DOM!';
 element.style.backgroundColor = '#f9f9f9';
 ```
 
@@ -55,7 +55,7 @@ techniques we've learned for traversing the DOM.
 Let's append `element` to `body` to start:
 
 ``` javascript
-document.body.appendChild(element)
+document.body.appendChild(element);
 ```
 
 If you've been following along, you should see `"Hello, DOM!"` on the page now
@@ -72,21 +72,21 @@ And now our element's text is centered.
 We can append elements to that element:
 
 ``` javascript
-var ul = document.createElement('ul')
+let ul = document.createElement('ul');
 
 for (let i = 0; i < 3; i++) {
-  let li = document.createElement('li')
-  li.innerHTML = (i + 1).toString()
-  ul.appendChild(li)
+  let li = document.createElement('li');
+  li.innerHTML = (i + 1).toString();
+  ul.appendChild(li);
 }
 
-element.appendChild(ul)
+element.appendChild(ul);
 ```
 
 Hm, that looks a bit ugly. Let's fix it
 
 ``` javascript
-ul.style.textAlign = 'left'
+ul.style.textAlign = 'left';
 ```
 
 That's better.
@@ -98,7 +98,7 @@ Now let's remove one of those `li`s.
 ### `removeChild()`
 
 ``` javascript
-ul.removeChild(ul.querySelector('li:nth-child(2)'))
+ul.removeChild(ul.querySelector('li:nth-child(2)'));
 ```
 
 Boom. Second element is gone.
@@ -110,7 +110,7 @@ What if we want to remove the whole unordered list (`ul`)?
 We can just call `remove()` on the element itself:
 
 ``` javascript
-ul.remove()
+ul.remove();
 ```
 
 And it's gone!
